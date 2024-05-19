@@ -8,4 +8,4 @@ RUN pip3 install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-CMD ["bash", "start.sh"]
+CMD flask run -h 0.0.0.0 -p 5000 & /bin/bash start.sh
